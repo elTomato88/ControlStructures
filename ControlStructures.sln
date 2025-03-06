@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FOR", "FOR\FOR.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Geometry", "Geometry\Geometry.vcxproj", "{754EB6C2-2A98-441A-B396-159E0CDFBC94}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chess", "Chess\Chess.vcxproj", "{901054DD-6E10-4C6E-8D5C-92FAA8747E00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{754EB6C2-2A98-441A-B396-159E0CDFBC94}.Release|x64.Build.0 = Release|x64
 		{754EB6C2-2A98-441A-B396-159E0CDFBC94}.Release|x86.ActiveCfg = Release|Win32
 		{754EB6C2-2A98-441A-B396-159E0CDFBC94}.Release|x86.Build.0 = Release|Win32
+		{901054DD-6E10-4C6E-8D5C-92FAA8747E00}.Debug|x64.ActiveCfg = Debug|x64
+		{901054DD-6E10-4C6E-8D5C-92FAA8747E00}.Debug|x64.Build.0 = Debug|x64
+		{901054DD-6E10-4C6E-8D5C-92FAA8747E00}.Debug|x86.ActiveCfg = Debug|Win32
+		{901054DD-6E10-4C6E-8D5C-92FAA8747E00}.Debug|x86.Build.0 = Debug|Win32
+		{901054DD-6E10-4C6E-8D5C-92FAA8747E00}.Release|x64.ActiveCfg = Release|x64
+		{901054DD-6E10-4C6E-8D5C-92FAA8747E00}.Release|x64.Build.0 = Release|x64
+		{901054DD-6E10-4C6E-8D5C-92FAA8747E00}.Release|x86.ActiveCfg = Release|Win32
+		{901054DD-6E10-4C6E-8D5C-92FAA8747E00}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
