@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string> 
 using namespace std;
 //#define SQUARE //проверено
 //#define TASK_2 //проверено
@@ -283,10 +284,9 @@ void main()
 
 #endif
 #ifdef TASK_10
-	int x; // ось абцисс
-	int y; //ось ординат
-	int n; //размер треугольника, макс. строка, макс. столбец
-	int c; // текущий элемент
+	int n = 1;
+	int k = 1;
+	
 	
 	while (true)
 	{
@@ -304,40 +304,31 @@ void main()
 		else
 		{
 			system("CLS");
-			for (y = 0; y < n;y++)
-			{
+			
+			
+			for (int i = 0; i < n; i++) {
 				
-				for (int x = 1;x < n - y;x++)
-				{
-					cout << " ";
-				}
-				for (x = 0;x <= y;x++)
-				{
-					int result_factorial_x = 1;
-					int result_factorial_y = 1;
-					int result_factorial_x_y = 1;
-
-					for (int i = 1; i <= x; i++)
-					{
-						result_factorial_x = result_factorial_x * i;
-					}
-					for (int i = 1; i <= y; i++)
-					{
-						result_factorial_y = result_factorial_y * i;
-					}
-					for (int i = 1; i <= y - x; i++)
-					{
-						result_factorial_x_y = result_factorial_x_y * i;
-					}
-
-					c = result_factorial_y / (result_factorial_x * result_factorial_x_y);
+				string rows = "";
+				// Коэфф
+				for (int x = 1; x <= n - i; x++) cout << "    ";
+				for (int j = 0; j <= i; j++) {
+					if (j == 0 || i == 0) k = 1;
+					else k = k * (i - j + 1) / j;
 					
+					int digits = 100000;
+					string spaces = " ";
+					for (;digits>0;)
+					{
+						if (k / 10 < digits)spaces += " ";
+						digits /= 10;
+						
+					}
 					
-					cout << c; cout <<" ";
-
+					string k_string = to_string(k);
+					rows += k_string + spaces;
 				}
+				cout << rows;
 				cout << endl;
-
 			}
 			
 				cout << endl;
